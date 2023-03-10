@@ -21,8 +21,8 @@ public class Sensor : MonoBehaviour
     private void FixedUpdate() {
 
         RaycastHit hit;
-        var doHit = Physics.SphereCast(transform.position, radius, transform.forward, out hit, length, collisionMask);
-        var changedState = IsColliding != doHit;
+        bool doHit = Physics.SphereCast(transform.position, radius, transform.forward, out hit, length, collisionMask);
+        bool changedState = IsColliding != doHit;
         IsColliding = doHit;
 
         if( doHit ) { 

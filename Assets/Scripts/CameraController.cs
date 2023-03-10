@@ -2,21 +2,21 @@
 
 public class CameraController : MonoBehaviour
 {
-    public VehiculeController vehicule;
+    public Transform target;
 
     public Vector3 offset = default;
     public float lookForward = 3f;
 
-    new private Camera camera;
+    private Camera _camera;
 
     private void Start() {
-        camera = GetComponent<Camera>();
+        _camera = GetComponent<Camera>();
     }
 
     private void Update() {
-        var curOffset = vehicule.transform.rotation * offset;
-        transform.position = vehicule.transform.position + curOffset;
+        var curOffset = target.rotation * offset;
+        transform.position = target.position + curOffset;
 
-        camera.transform.LookAt(vehicule.transform.position + vehicule.transform.forward * lookForward);
+        _camera.transform.LookAt(target.position + target.forward * lookForward);
     }
 }

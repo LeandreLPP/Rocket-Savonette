@@ -43,7 +43,7 @@ public class BoolInputListener : MonoBehaviour
 
     private void UpdateValues(InputAction.CallbackContext obj)
     {
-        var curValue = obj.ReadValueAsButton();
+        bool curValue = obj.ReadValueAsButton();
         if( curValue != isPressed ) 
         {
             isPressed = curValue;
