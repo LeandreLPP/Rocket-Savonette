@@ -11050,11 +11050,13 @@ MonoBehaviour:
   turnListener: {fileID: 2028802423}
   straffListener: {fileID: 894493175}
   maxSpeed: 30
-  accelerationTime: 2
+  accelerationTime: 1
+  deccelerationTime: 0.5
   straffSpeed: 15
   straffAccelerationTime: 0.1
   rotationSpeed: 4
   rotationAccelerationTime: 0.05
+  debugScale: 5
   burnVelocity: {x: 0, y: 0, z: 0}
   straffVelocity: {x: 0, y: 0, z: 0}
   currentRotationSpeed: 0
@@ -11080,8 +11082,8 @@ Rigidbody:
   m_GameObject: {fileID: 899900933}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.5
-  m_AngularDrag: 5
+  m_Drag: 0
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
