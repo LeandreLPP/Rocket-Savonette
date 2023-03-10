@@ -6,12 +6,13 @@
             "id": "ed6d99ba-e888-44b3-8329-d5c70f355b8e",
             "actions": [
                 {
-                    "name": "Tilt",
+                    "name": "Straff",
                     "type": "Value",
                     "id": "942c0705-8dc2-45fe-81a8-7d99ee09c69f",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Turn",
@@ -19,7 +20,8 @@
                     "id": "d406ab04-5c40-48a5-bc49-90380a2ecf53",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Burn",
@@ -27,26 +29,28 @@
                     "id": "1f296a22-d798-49dd-ae95-372a47a72c49",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
-                    "name": "Stop",
+                    "name": "Hover",
                     "type": "Button",
                     "id": "05d9ef75-a66a-4e47-b75a-f9315e864d2a",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "978bfe49-cc26-4a3d-ab7b-7d7a29327403",
-                    "path": "<Gamepad>/leftStick",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Tilt",
+                    "action": "Straff",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -57,18 +61,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Tilt",
+                    "action": "Straff",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "up",
                     "id": "e2062cb9-1b15-46a2-838c-2f8d72a0bdd9",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Tilt",
+                    "action": "Straff",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -79,18 +83,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Tilt",
+                    "action": "Straff",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
                     "id": "d2581a9b-1d11-4566-b27d-b92aff5fabbc",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Tilt",
+                    "action": "Straff",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -101,14 +105,14 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Tilt",
+                    "action": "Straff",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
                     "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
-                    "path": "<Gamepad>/rightStick",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -200,7 +204,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Stop",
+                    "action": "Hover",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -211,7 +215,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Stop",
+                    "action": "Hover",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -227,7 +231,8 @@
                     "id": "f214b461-76e9-4475-94c5-ab9c3a7c1cb8",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Submit",
@@ -235,7 +240,8 @@
                     "id": "7faf1712-c0c1-4787-8d32-8262a76b74b2",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Cancel",
@@ -243,7 +249,8 @@
                     "id": "68c947d8-9cfd-4102-8a9a-b93bcf8d71bf",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Point",
@@ -251,7 +258,8 @@
                     "id": "6de60415-ca6e-4785-815f-baaa8ce5e93e",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Click",
@@ -259,7 +267,8 @@
                     "id": "2c70e6f1-1952-4a34-a158-cefb2ef67750",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "ScrollWheel",
@@ -267,7 +276,8 @@
                     "id": "3d315157-bcef-48fa-bd46-06237e9e4088",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MiddleClick",
@@ -275,7 +285,8 @@
                     "id": "088c38b6-544e-41cb-9c8a-e32326b2c4a2",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RightClick",
@@ -283,7 +294,8 @@
                     "id": "7e6113ba-cfeb-47d0-8e65-7980920735ab",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TrackedDevicePosition",
@@ -291,7 +303,8 @@
                     "id": "c5a34dac-ecfd-438e-b61a-49361d522d9f",
                     "expectedControlType": "Vector3",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TrackedDeviceOrientation",
@@ -299,7 +312,8 @@
                     "id": "d98b6296-6be2-48ef-9aa0-28263e05ef18",
                     "expectedControlType": "Quaternion",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
