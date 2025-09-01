@@ -24,7 +24,7 @@ public class CameraController : MonoBehaviour
 
         _targetRigidbody ??= target.GetComponent<Rigidbody>();
         _currentVelocity = Vector3.SmoothDamp(_currentVelocity,
-            _targetRigidbody.velocity,
+            _targetRigidbody.linearVelocity,
             ref _damp,
             dampTime,
             Mathf.Infinity,

@@ -59,7 +59,7 @@ public class ArcadeVehiculeController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ExtractVelocities(_rigidbody.velocity,
+        ExtractVelocities(_rigidbody.linearVelocity,
             out var forwardVector,
             out float forwardVelocity,
             out var rightVector,
@@ -71,8 +71,8 @@ public class ArcadeVehiculeController : MonoBehaviour
             var targetVelocity = transform.forward * targetForwardSpeed;
 
             targetVelocity += transform.right * straffListener.Value.x * straffSpeed;
-            _rigidbody.velocity = Vector3.SmoothDamp(
-                _rigidbody.velocity,
+            _rigidbody.linearVelocity = Vector3.SmoothDamp(
+                _rigidbody.linearVelocity,
                 targetVelocity,
                 ref _burnDampVelocity,
                 forwardVelocity > 0 ? accelerationTime : deccelerationTime,
@@ -84,7 +84,7 @@ public class ArcadeVehiculeController : MonoBehaviour
             _burnDampVelocity = Vector3.zero;
         }
 
-        _rigidbody.drag =
+        _rigidbody.linearDamping =
             brakeListener.isPressed ? brakingDrag :
             hoverListener.isPressed ? hoverDrag : 
             normalDrag;
@@ -147,7 +147,7 @@ public class ArcadeVehiculeController : MonoBehaviour
         float forwardVelocity, rightVelocity;
         Vector3 forwardVector, rightVector;
         
-        var velocity = _rigidbody != null ? _rigidbody.velocity : new Vector3(maxSpeed * 0.3f, 0, maxSpeed * 0.4f);
+        var velocity = _rigidbody != null ? _rigidbody.linearVelocity : new Vector3(maxSpeed * 0.3f, 0, maxSpeed * 0.4f);
         ExtractVelocities(velocity, out forwardVector, out forwardVelocity, out rightVector, out rightVelocity);
 
         DrawDirection(velocity, Color.cyan);

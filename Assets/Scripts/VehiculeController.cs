@@ -66,13 +66,13 @@ public class VehiculeController : MonoBehaviour
 
         if (hoverListener.isPressed)
         {
-            _rigidbody.drag = 0;
-            _rigidbody.angularDrag = 0;
+            _rigidbody.linearDamping = 0;
+            _rigidbody.angularDamping = 0;
         }
         else
         {
-            _rigidbody.drag = forwardDrag;
-            _rigidbody.angularDrag = angularDrag;
+            _rigidbody.linearDamping = forwardDrag;
+            _rigidbody.angularDamping = angularDrag;
         }
 
         // Straffing
